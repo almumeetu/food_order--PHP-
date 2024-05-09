@@ -1,0 +1,37 @@
+/* 
+    Author: Al Mumeetu Saikat;
+    Theme: Restaurant Food Order;
+    version: 1.0;
+*/
+
+/* CSS for Admin */
+*{
+    margin: 0 0;
+    padding: 0 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper{
+    border: 1px solid black;
+    padding: 1%;
+    width: 80%;
+    margin:  0 auto;
+}
+
+.text-center{
+    text-align: center;
+}
+/* Css For Menu  */
+.menu ul{
+    list-style-type: none;
+}
+.menu ul li {
+    display: inline;
+    padding: 1%;
+}
+
+/* Css For Footer  */
+.footer{
+    background-color: #ff4757;
+    color: #fff;
+}
