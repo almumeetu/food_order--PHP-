@@ -58,11 +58,18 @@
         //1. Get the Data from form
         $full_name = $_POST['full_name'];
         $username = $_POST['username'];
-        $password = $_POST['password'];
+        $password = md5($_POST['password']); //Password Encryption with MD5
 
         //2. SQL Query to Save the data into database
         $sql ="INSERT INTO tbl_admin SET
-        "
+            full_name='$full_name',
+            username='$username',
+            password='$password'
+        ";
+
+        //3. Execute Query And Save Data In DataBase
+        $conn = mysqli_connect('localhost', 'root', '') or die(mysqli_error()); // Database Connection
+        $db_select = mysqli_select_db($conn, 'food-order2') or die(mysqli_error()); // Selecting DataBase
 
     }
 ?>
