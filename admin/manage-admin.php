@@ -62,4 +62,4 @@
 <!-- Main Content Section End Here -->
 
 <!-- for footer -->
-<?php include('partials/footer.php'); ?>
+<?php include('partials/footer.php'); ?> 
